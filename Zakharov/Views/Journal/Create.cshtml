@@ -1,0 +1,31 @@
+﻿@model Journal
+
+<h1>Создание новой записи</h1>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="StudentFullName">ФИО студента</label>
+        <input asp-for="StudentFullName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="SubjectName">Название предмета</label>
+        <input asp-for="SubjectName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Comment">Комментарий</label>
+        <input asp-for="Comment" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Grade">Оценка</label>
+        <input asp-for="Grade" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Date">Дата</label>
+        <input asp-for="Date" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Создать</button>
+</form>
+
+<div>
+    <a asp-action="Index">Вернуться к списку</a>
+</div>
